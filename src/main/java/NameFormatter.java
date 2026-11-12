@@ -1,18 +1,16 @@
 public class NameFormatter {
 
-    /* public static String format(String firstName, String lastName)
+    public static String format(String firstName, String lastName)
     {
+        String formattedName = "";
+        formattedName = lastName + ", " + firstName;
+        return formattedName;
+    }
 
-    }     */
-
-    /* public static String format(String prefix,
-                                String firstName,
-                                String middleName,
-                                String lastName,
-                                String suffix)
+     public static String format(String fullName)
     {
-      //
-    }      */
+        return fullName;
+    }
 
 
 
@@ -51,7 +49,6 @@ public class NameFormatter {
               //At this point formatttedName = lastName+"' " + prefix + " " + firstName + " " + middleName + " , " + suffix
         }
 
-        System.out.println(formattedName);
         return formattedName;
 
     }
@@ -62,5 +59,12 @@ public class NameFormatter {
     public static void main(String[] args) {
              String outputString;
         outputString = format("Mr.","John","L.","Doe","Ph.d.");
+        System.out.println(outputString);
+
+        outputString = format("John" , "Doe");
+        System.out.println(outputString);
+
+        outputString = format("Doe, Mr. John");
+        System.out.println(outputString);
     }
 }
